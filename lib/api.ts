@@ -3,7 +3,7 @@ import { Country, CityData, VisaRequirement } from '@/store/travel-store';
 // REST Countries API
 export const fetchCountries = async (): Promise<Country[]> => {
   try {
-    // 10 فیلڈز: name,capital,region,subregion,population,flags,languages,timezones,latlng,cca2
+    
     const response = await fetch('https://restcountries.com/v3.1/all?fields=name,capital,region,subregion,population,flags,languages,timezones,latlng,cca2');
     
     if (!response.ok) {
